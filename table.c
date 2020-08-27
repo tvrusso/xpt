@@ -264,6 +264,10 @@ void display_help(Widget w)
 	      135 + 2 * mfontheight, "Volume", 6);
 
   XDrawString(p_disp, XtWindow(w), theGC,
+	      100 - XTextWidth(mfontstruct, "Valence Electrons", 17) / 2,
+	      160 + mfontheight, "Valence Electrons", 17);
+
+  XDrawString(p_disp, XtWindow(w), theGC,
 	      100 - XTextWidth(mfontstruct, "Name", 4) / 2,
 	      190 + mfontheight, "Name", 4);
 }
