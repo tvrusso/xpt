@@ -22,3 +22,5 @@ CPPFLAGS, LDFLAGS, CFLAGS).
 
 You must have Athena widgets installed (libXaw) as well as X11
 development libraries and headers.
+
+[Screenshot showing Ruthenium](xpt_screenshot.png)
