@@ -1,0 +1,18 @@
+# @(#)Imakefile 23.7 91/06/11
+# Imakefile - xlock
+#
+TARGETS = xpt
+
+SRCS = xpt.c init.c Xprogs.c table.c
+
+OBJS = xpt.o init.o Xprogs.o table.o
+
+LCL_LIB = XawClientLibs
+DEPLIBS = XawClientDepLibs
+SYS_LIBRARIES = -lm
+
+AllTarget($(TARGETS))
+
+NormalProgramTarget($(TARGETS), $(OBJS), $(DEPLIBS), $(LCL_LIB), $(SYS_LIB))
+
+DependTarget()
